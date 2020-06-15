@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION h_export.clean_schema_indexes(schema_name varchar)
+CREATE OR REPLACE FUNCTION clean_schema_indexes(schema_name varchar)
     RETURNS void
     LANGUAGE plpgsql
 AS
@@ -52,9 +52,7 @@ BEGIN
                                     AND attnum = ANY (i.indkey) -- 0 excluded by: indexprs IS NULL
                                   ) a) b
                 WHERE b.index = t;
---                 RAISE NOTICE '%', index_bites;
                 index_size_arr := array_append(index_size_arr, index_bites);
---                 RAISE NOTICE '%', index_size_arr;
                 EXECUTE 'DROP INDEX ' || t || ';';
                 RAISE NOTICE 'Performed index drop %', t;
 
