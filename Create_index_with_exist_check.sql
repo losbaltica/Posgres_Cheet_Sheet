@@ -5,7 +5,7 @@
 -- Name: create_index_with_exist_check(schema_table_name character varying,
 -- column_name character varying, geom_index character varying); Type: FUNCTION; Schema: f_analysis; Owner: postgres
 --
-CREATE OR REPLACE FUNCTION f_analysis.create_index_with_exist_check(schema_table_name varchar, column_name varchar,
+CREATE OR REPLACE FUNCTION create_index_with_exist_check(schema_table_name varchar, column_name varchar,
                                                    geom_index bool = false)
 RETURNS void
 LANGUAGE plpgsql
@@ -34,7 +34,7 @@ BEGIN
     WHERE b.table_name = schema_table_name
       AND b.idx_columns = column_name);
 
---     RAISE NOTICE 'Index check result %', index_exits::text;
+
     IF index_exits THEN
         -- If true - Return function if exist
         RAISE NOTICE 'Index already exist. Skipping...';
@@ -46,7 +46,6 @@ BEGIN
         end if;
 
         EXECUTE 'CREATE INDEX ON ' || schema_table_name || ' ' || geom_index_query || ' (' || column_name || ')';
---         RAISE NOTICE  'CREATE INDEX ON % % (%)', schema_table_name, geom_index_query, column_name;
         RAISE NOTICE 'Index on column % created', column_name;
     end if;
 END $$;
