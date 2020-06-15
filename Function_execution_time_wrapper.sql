@@ -2,7 +2,7 @@
 -- Name: nm_execution_time_raise(character varying); Type: FUNCTION; Schema: f_analysis; Owner: postgres
 --
 
-CREATE FUNCTION f_analysis.execution_time_raise(function_name character varying) RETURNS void
+CREATE FUNCTION execution_time_raise(function_name character varying) RETURNS void
     LANGUAGE plpgsql
 AS
 $$
