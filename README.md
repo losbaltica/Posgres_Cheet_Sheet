@@ -9,4 +9,4 @@ Usage
 
 Developer
 -----------------------
-* Adam Pankowski
+* [Adam Pankowski](https://www.linkedin.com/in/adam-pankowski-903b11b7/)
