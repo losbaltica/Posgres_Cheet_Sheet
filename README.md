@@ -1,7 +1,7 @@
 # PostgreSQL_Cheet_Sheet
 
 ## Description
-Repository contain list of PG/SQL queries that will help speed up processes.
+Repository contain list of PG/SQL sudo queries, ready to grap and us.
 
 Usage
 --------
