@@ -11,7 +11,7 @@ Developer
 -----------------------
 * [Adam Pankowski](https://www.linkedin.com/in/adam-pankowski-903b11b7/)
 
-Repo Structure
+Structure
 -----------------------
 - General
   - BreakingMainTableIntoChilds
