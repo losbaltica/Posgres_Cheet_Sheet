@@ -10,3 +10,15 @@ Usage
 Developer
 -----------------------
 * [Adam Pankowski](https://www.linkedin.com/in/adam-pankowski-903b11b7/)
+
+Repo Structure
+-----------------------
+- General
+  - BreakingMainTableIntoChilds
+  - CreateIndexWithExistCheck
+  - DynamicGrantSchemaUsage
+  - FunctionExecutionTimeWrapper
+  - RemoveIndexesFromSchema
+- PostGIS
+  - st_difference_safe - st_difference with geometry holes exception handler
+
