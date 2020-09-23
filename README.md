@@ -1,17 +1,17 @@
-# PostgreSQL_Cheet_Sheet
+## PostgreSQL Cheet Sheet
 
-## Description
+### Description
 Repository contain list of PG/SQL sudo queries, ready to grap and us.
 
-Usage
+### Usage
 --------
 - Go to one of the SQL files and copy the command. Next update sudo variables and enjoy!
 
-Developer
+### Developer
 -----------------------
 * [Adam Pankowski](https://www.linkedin.com/in/adam-pankowski-903b11b7/)
 
-Structure
+### Structure
 -----------------------
 - General
   - BreakingMainTableIntoChilds
