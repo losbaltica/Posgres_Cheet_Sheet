@@ -27,7 +27,7 @@ $do$
                     );
                 RAISE NOTICE 'Index created - primary key';
                 EXECUTE (
-                            'CREATE INDEX ON fa_vegetation.canopy_' || circuit || ' ' ||
+                            'CREATE INDEX ON ' || child_table || '_' || circuit || ' ' ||
                             'USING GIST (geom);'
                     );
                 RAISE NOTICE 'Index created - geom';
