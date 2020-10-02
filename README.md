@@ -7,10 +7,6 @@ Repository contain list of PG/SQL sudo queries, ready to grap and us.
 --------
 - Go to one of the SQL files and copy the command. Next update sudo variables and enjoy!
 
-### Developer
------------------------
-* [Adam Pankowski](https://www.linkedin.com/in/adam-pankowski-903b11b7/)
-
 ### Structure
 -----------------------
 - General
