@@ -4,7 +4,7 @@ DECLARE
   r record;
   i int;
   v_schema text[] := '{schema1, schema2}';
-  v_new_owner varchar := 'ukpn_admin';
+  v_new_owner varchar := 'some_user';
 BEGIN
     FOR r IN
         select 'ALTER TABLE "' || table_schema || '"."' || table_name || '" OWNER TO ' || v_new_owner || ';' as a from information_schema.tables where table_schema = ANY (v_schema)
