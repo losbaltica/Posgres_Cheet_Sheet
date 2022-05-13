@@ -1,5 +1,5 @@
-// Jim Jones
-// https://stackoverflow.com/a/70516940/5935388
+-- Jim Jones
+-- https://stackoverflow.com/a/70516940/5935388
 
 CREATE TABLE split_line AS
 WITH j AS (
